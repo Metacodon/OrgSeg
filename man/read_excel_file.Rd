@@ -16,6 +16,6 @@ A list of all excel sheets which is imported as separated tibbles.
 Read the OrganoSeg software output excel file.
 }
 \examples{
-file_path <- "~/path/to/excel/file/from/OrganoSeg"
+file_path <- "C:/Users/mohokh/OrgSeg/P1_lastday.xls"
 read_excel_file(file_path)
 }

@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-#' file_path <- "~/path/to/excel/file/from/OrganoSeg"
+#' file_path <- "C:/Users/mohokh/OrgSeg/P1_lastday.xls"
 #' read_excel_file(file_path)
 read_excel_file <- function(file_path) {
   sheet_names <- file_path |> readxl::excel_sheets()
