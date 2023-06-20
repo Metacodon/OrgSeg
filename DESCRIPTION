@@ -12,3 +12,6 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 URL: https://github.com/Metacodon/OrgSeg
 BugReports: https://github.com/Metacodon/OrgSeg/issues
+Imports: 
+    purrr,
+    readxl
