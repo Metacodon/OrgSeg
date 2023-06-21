@@ -2,4 +2,5 @@
 
 export("%>%")
 export(read_excel_file)
+export(read_exp_info)
 importFrom(magrittr,"%>%")
