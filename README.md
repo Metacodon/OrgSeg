@@ -22,10 +22,28 @@ devtools::install_github("Metacodon/OrgSeg")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Here is an example of running an analysis.
+
+Read the OrganoSeg software output excel file:
 
 ``` r
-library(OrgSeg)
-file_path = system.file("extdata", "test_data.xls", package = "OrgSeg") # Path to the OrganoSeg output excel file. Here we've provided a example data file included in the package that you can access the path with system.file("extdata", "test_data.xls", package = "OrgSeg").
+library(OrgSeg) # Load the package
+file_path = system.file("extdata", "test_data.xls", package = "OrgSeg") # Path to the OrganoSeg output excel file. Here we've provided an example data file included in the package that you can access the path with system.file("extdata", "test_data.xls", package = "OrgSeg").
 data <- read_excel_file(file_path)
+```
+
+Read the experiment information .csv file and extract the treatments and
+related indices into a list:
+
+``` r
+exp_info_path = system.file("extdata", "exp_info.csv", package = "OrgSeg") # Path to the experiment information .csv file. Here we've provided an example experiment information .csv file included in the package that you can access the path with system.file("extdata", "test_data.xls", package = "OrgSeg").
+exp_info_list <- read_exp_info(exp_info_path)
+#> Rows: 21 Columns: 4
+#> ── Column specification ────────────────────────────────────────────────────────
+#> Delimiter: ","
+#> chr (1): Treatments
+#> dbl (3): R1, R2, R3
+#> 
+#> ℹ Use `spec()` to retrieve the full column specification for this data.
+#> ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 ```
