@@ -12,10 +12,12 @@ RoxygenNote: 7.2.3
 URL: https://github.com/Metacodon/OrgSeg
 BugReports: https://github.com/Metacodon/OrgSeg/issues
 Imports: 
+    dplyr,
     magrittr,
     purrr,
     readr,
-    readxl
+    readxl,
+    tibble
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
