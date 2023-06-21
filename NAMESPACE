@@ -3,4 +3,5 @@
 export("%>%")
 export(read_excel_file)
 export(read_exp_info)
+export(tibbleing)
 importFrom(magrittr,"%>%")
