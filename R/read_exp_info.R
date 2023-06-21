@@ -9,7 +9,7 @@
 #' file_path = system.file("extdata", "exp_info.csv", package = "OrgSeg")
 #' exp_info_list <- read_exp_info(file_path)
 read_exp_info <- function(file_path) {
-  info_df <- readr::read_csv(file_path)
+  info_df <- readr::read_csv(file_path, show_col_types = FALSE)
   treatments <- info_df$Treatments
   index_list <- list()  # Create an empty list
   for (i in 1:nrow(info_df)) {
