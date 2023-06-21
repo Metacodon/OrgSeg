@@ -39,3 +39,10 @@ related indices into a list:
 exp_info_path = system.file("extdata", "exp_info.csv", package = "OrgSeg") # Path to the experiment information .csv file. Here we've provided an example experiment information .csv file included in the package that you can access the path with system.file("extdata", "test_data.xls", package = "OrgSeg").
 exp_info_list <- read_exp_info(exp_info_path)
 ```
+
+Create a merged tibble of all data with 3 columns of Area, Replicate,
+and Treatment:
+
+``` r
+all_data <- tibbleing_loop (data, exp_info_list$index_list, exp_info_list$treatments)
+```
