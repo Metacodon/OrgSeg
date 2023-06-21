@@ -12,7 +12,7 @@ tibbleing_loop <- function(data_list, index_list, treatments) {
   merged_tib <- NULL
   for (i in seq_along(treatments)) {
     tib <- tibbleing(data_list, index = index_list[[i]], treatment = treatments[i])
-    merged_tib <- bind_rows(merged_tib, tib)
+    merged_tib <- dplyr::bind_rows(merged_tib, tib)
   }
   return(merged_tib)
 }
