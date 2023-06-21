@@ -4,8 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Ali", "Okhovat", , "Metacodon@users.noreply.github.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-2137-1428"))
-Description: This is a package to make the use of OrganoSeg analysis software easier. 
-            From importing and processing the data to runnig analysis and ploting figures. 
+Description: The goal of OrgSeg package is to make the use of OrganoSeg analysis software easier. From importing and pre-processing of the raw excel file from the software to running analysis and plotting figures. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
