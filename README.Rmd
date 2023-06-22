@@ -58,5 +58,18 @@ all_data <- tibbleing_loop (data, exp_info_list$index_list, exp_info_list$treatm
 Create a summary table to evaluate experiment controls:
 
 ```{r eval=FALSE}
-ctrl_summary_table <- ctrl_table(all_data)
+ctrl_table(all_data)
+```
+
+Based on the summary table, define the breaks and tags as following:
+
+```{r}
+breaks <- c(0,427,848,1869,50000) # Min/NegCtrl 3rd Qu./DMSO Mean/PosCtrl 3rd Qu./Max
+tags <- c("noise","small organoids","medium organoids","large organoids")
+```
+
+Create a table to inspect bins for controls:
+
+```{r eval=FALSE}
+inspect_bins_table(all_data, breaks, tags)
 ```
