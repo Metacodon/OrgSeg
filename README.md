@@ -4,6 +4,8 @@
 # OrgSeg
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/Metacodon/OrgSeg/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Metacodon/OrgSeg/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of OrgSeg package is to make the use of OrganoSeg analysis
