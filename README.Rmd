@@ -54,3 +54,8 @@ Create a merged tibble of all data with 3 columns of Area, Replicate, and Treatm
 all_data <- tibbleing_loop (data, exp_info_list$index_list, exp_info_list$treatments)
 ```
 
+Create a summary table to evaluate experiment controls:
+
+```{r}
+ctrl_table(all_data)
+```
