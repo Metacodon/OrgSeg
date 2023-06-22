@@ -2,6 +2,7 @@
 
 export("%>%")
 export(ctrl_table)
+export(inspect_bins_table)
 export(read_excel_file)
 export(read_exp_info)
 export(tibbleing)
