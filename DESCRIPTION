@@ -1,5 +1,5 @@
 Package: OrgSeg
-Title: What the Package Does (One Line, Title Case)
+Title: The goal of OrgSeg package is to make the use of OrganoSeg analysis software easier.
 Version: 0.0.0.9000
 Authors@R: 
     person("Ali", "Okhovat", , "Metacodon@users.noreply.github.com", role = c("aut", "cre"),
