@@ -4,7 +4,7 @@
 #' @param index_list A list of replicates indices that can be retrieved from experiment info list made with read_exp_info().
 #' @param treatments A list of all treatments that can be retrieved from experiment info list made with read_exp_info().
 #'
-#' @return A a merged tibble of Area, Replicate, and Treatment columns for all treatments.
+#' @return A merged tibble of Area, Replicate, and Treatment columns for all treatments.
 #' @export
 #'
 #'
