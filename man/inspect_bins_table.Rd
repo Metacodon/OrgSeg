@@ -11,7 +11,7 @@ inspect_bins_table(all_data, breaks, tags)
 
 \item{breaks}{Specify breaks in a vector like c(0,500,1000,2000,50000) #Min/3rd Qu./Mean/3rd Qu./Max .}
 
-\item{tags}{Specify interval/bin labels in a vector like c("label1","label2","label3","label4")}
+\item{tags}{Specify interval/bin labels in a vector like c("label1","label2","label3","label4").}
 }
 \value{
 A table to inspect bins for experiment controls.
