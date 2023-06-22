@@ -2,20 +2,20 @@
 % Please edit documentation in R/inspect_bins_table.R
 \name{inspect_bins_table}
 \alias{inspect_bins_table}
-\title{Create a table to inspect bins for controls.}
+\title{Create a table to inspect bins for experiment controls.}
 \usage{
 inspect_bins_table(all_data, breaks, tags)
 }
 \arguments{
 \item{all_data}{A merged tibble of Area, Replicate, and Treatment columns for all treatments which is made by tibbleing_loop().}
 
-\item{breaks}{Specify breaks in a vector like c(0,500,1000,2000,50000) #Min/3rd Qu./Mean/3rd Qu./Max}
+\item{breaks}{Specify breaks in a vector like c(0,500,1000,2000,50000) #Min/3rd Qu./Mean/3rd Qu./Max .}
 
-\item{tags}{specify interval/bin labels in a vector like c("label1","label2","label3","label4")}
+\item{tags}{Specify interval/bin labels in a vector like c("label1","label2","label3","label4")}
 }
 \value{
-A table to inspect bins for controls.
+A table to inspect bins for experiment controls.
 }
 \description{
-Create a table to inspect bins for controls.
+Create a table to inspect bins for experiment controls.
 }
