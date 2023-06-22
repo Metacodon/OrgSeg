@@ -89,7 +89,14 @@
 <code class="sourceCode R"><span><span class="va">all_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/tibbleing_loop.html">tibbleing_loop</a></span> <span class="op">(</span><span class="va">data</span>, <span class="va">exp_info_list</span><span class="op">$</span><span class="va">index_list</span>, <span class="va">exp_info_list</span><span class="op">$</span><span class="va">treatments</span><span class="op">)</span></span></code></pre></div>
 <p>Create a summary table to evaluate experiment controls:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">ctrl_summary_table</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/ctrl_table.html">ctrl_table</a></span><span class="op">(</span><span class="va">all_data</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="reference/ctrl_table.html">ctrl_table</a></span><span class="op">(</span><span class="va">all_data</span><span class="op">)</span></span></code></pre></div>
+<p>Based on the summary table, define the breaks and tags as following:</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">breaks</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">427</span>,<span class="fl">848</span>,<span class="fl">1869</span>,<span class="fl">50000</span><span class="op">)</span> <span class="co"># Min/NegCtrl 3rd Qu./DMSO Mean/PosCtrl 3rd Qu./Max</span></span>
+<span><span class="va">tags</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"noise"</span>,<span class="st">"small organoids"</span>,<span class="st">"medium organoids"</span>,<span class="st">"large organoids"</span><span class="op">)</span></span></code></pre></div>
+<p>Create a table to inspect bins for controls:</p>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/inspect_bins_table.html">inspect_bins_table</a></span><span class="op">(</span><span class="va">all_data</span>, <span class="va">breaks</span>, <span class="va">tags</span><span class="op">)</span></span></code></pre></div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
