@@ -13,6 +13,8 @@ URL: https://github.com/Metacodon/OrgSeg, https://metacodon.github.io/OrgSeg/
 BugReports: https://github.com/Metacodon/OrgSeg/issues
 Imports: 
     dplyr,
+    ggplot2,
+    gridExtra,
     gt,
     magrittr,
     purrr,
