@@ -10,9 +10,7 @@
 #'
 inspect_bins_table <- function(all_data,breaks,tags){
 
-  var="DMSO"
-  group_tags1 <- all_data %>%
-    dplyr::filter(Treatment == var) %>%
+  group_tags1 <- all_data[all_data[,3]=="DMSO",] %>%
     .[,1] %>% unlist() %>%
     as.numeric() %>%
     cut(breaks = breaks,
@@ -20,9 +18,7 @@ inspect_bins_table <- function(all_data,breaks,tags){
         right=FALSE,
         labels=tags)
 
-  var="PosCtrl"
-  group_tags2 <- all_data %>%
-    filter(Treatment == var) %>%
+  group_tags2 <- all_data[all_data[,3]=="PosCtrl",] %>%
     .[,1] %>% unlist() %>%
     as.numeric() %>%
     cut(breaks = breaks,
@@ -30,9 +26,7 @@ inspect_bins_table <- function(all_data,breaks,tags){
         right=FALSE,
         labels=tags)
 
-  var="NegCtrl"
-  group_tags3 <- all_data %>%
-    filter(Treatment == var) %>%
+  group_tags3 <- all_data[all_data[,3]=="NegCtrl",] %>%
     .[,1] %>% unlist() %>%
     as.numeric() %>%
     cut(breaks = breaks,
