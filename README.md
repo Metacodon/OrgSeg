@@ -24,9 +24,8 @@ devtools::install_github("Metacodon/OrgSeg")
 
 ## Example
 
-Here is an example of running an analysis.
-
-Read the OrganoSeg software output excel file:
+Here is an example of running an analysis. Read and import the OrganoSeg
+software output excel file as following:
 
 ``` r
 library(OrgSeg) # Load the package
@@ -67,3 +66,12 @@ Create a table to inspect bins for controls:
 ``` r
 inspect_bins_table(all_data, breaks, tags)
 ```
+
+Create a plot to inspect bins for controls:
+
+``` r
+inspect_bins_plot(all_data, breaks, tags)
+```
+
+Adjust the brakes if needed and inspect the table and plot again, if
+your happy you can continue.
