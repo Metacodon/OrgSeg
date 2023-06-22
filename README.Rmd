@@ -56,6 +56,6 @@ all_data <- tibbleing_loop (data, exp_info_list$index_list, exp_info_list$treatm
 
 Create a summary table to evaluate experiment controls:
 
-```{r}
-ctrl_table(all_data)
+```{r eval=FALSE}
+ctrl_summary_table <- ctrl_table(all_data)
 ```
